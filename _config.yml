@@ -46,11 +46,7 @@ jekyll-archives:
   layout: archive
   permalinks:
     category: '/category/:name/'
-    
-# Pagination 
-paginate: 20
-paginate_path: /page:num/
-    
+
 # Other
 highlighter: rouge
 markdown: kramdown
