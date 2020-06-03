@@ -1,0 +1,19 @@
+<!-- begin post -->
+{% assign author = site.authors[post.author] %}
+
+<div class="blog-grid-item">
+    <div class="card h-100 w-100">
+        <div class="card-body">
+            <h2 class="card-title">
+                <a class="text-dark" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                {% if post.rating %}
+                <div class="mb-2 mt-2 font-weight-normal">
+                {% include star_rating_postbox.html %}
+                </div>
+                {% endif %}
+            </h2>
+            <span class="post-date">{{ post.date | date_to_string }}</span>
+        </div>
+    </div>
+</div>
+<!-- end post -->

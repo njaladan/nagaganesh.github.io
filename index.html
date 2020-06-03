@@ -5,17 +5,24 @@ title: Home
 
 <!-- Posts Index
 ================================================== -->
-<div class="blog-grid-container">
-    {% for post in paginator.posts %}
-        {% include postbox.html %}
+<!-- <div class="blog-grid-container"> -->
+    {% for post in site.posts %}
+    {% unless post.tags contains 'Books'%}
+    {% assign currentdate = post.date | date: "%Y" %}
+    {% if currentdate != date %}
+        <a class="card-title text-dark" id="y{{currentdate}}">{{ currentdate }}</a>
+        {% assign date = currentdate %} 
+    {% endif %}
+            <div class="card-body">
+                <div>
+                    <a class="card-title" class="text-dark" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                    <span class="post-date">{{ post.date | date_to_string }}</span>
+                </div>
+            </div>
+    {% endunless %}
     {% endfor %}
-</div>
+<!-- </div> -->
 
 <!-- Pagination
 ================================================== -->
-<div class="bottompagination">
-<span class="navigation" role="navigation">
-    {% include pagination.html %}
-</span>
-</div>
 

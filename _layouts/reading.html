@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<div class="page-single">
+    <div class="entry-header">       
+        <h1 class="posttitle">Book Reviews</h1>       
+    </div>
+</div>
+
+<h4 class="mt-5 mb-neg-30"><span class="text-capitalize text-small badge badge-primary">Books</span></h4><br /><br />
+{% for tag in site.tags %}
+{% if tag[0] == "Books" %}
+{% assign pages_list = tag[1] %}
+{% for post in pages_list %}
+{% if post.title != null %}
+{% if group == null or group == post.group %}
+{% assign currentdate = post.date | date: "%Y" %}
+{% if currentdate != date %}
+    <a class="card-title text-dark" id="y{{currentdate}}">{{ currentdate }}</a>
+    {% assign date = currentdate %} 
+{% endif %}
+        <div class="card-body">
+            <div>
+                {% if post.link %}
+                <a class="card-title" class="text-dark" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                {% else %}
+                <a class="card-title" class="text-dark">{{ post.title }}</a>
+                {% endif %}
+                <span class="post-date">{{ post.date | date_to_string }}</span>
+            </div>
+        </div>
+{% endif %}
+{% endif %}
+{% endfor %}
+{% assign pages_list = nil %}
+{% assign group = nil %}
+{% endif %}
+{% endfor %}

@@ -32,9 +32,7 @@ jQuery(document).ready(function($){
 	
 	
 	// toggle comments
-    $('.show-comments').on('click', function() {  
-		$('#comments').toggleClass('comments--show');		
-	});
+	$('#comments').toggleClass('comments--show');		
 
 	//toggle search
 	$('.show-search').on('click', function() {  

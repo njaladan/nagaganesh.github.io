@@ -6,6 +6,8 @@
 
 <link rel="icon" href="{{ site.baseurl }}/assets/images/logo.png">
 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
 <title>{{ page.title }} | {{site.name}}</title>
 
 {% seo %}
@@ -50,10 +52,10 @@ ga('send', 'pageview');
 <nav id="menu">
     <ul>
         <h3>Navigation</h3>
-        <li><a href="{{ site.baseurl }}/">Home</a></li>
-        <li><a href="{{ site.baseurl }}/about">About <span class="badge badge-primary">Memoirs Jekyll Theme</span></a></li>
-        <li><a target="_blank" href="https://bootstrapstarter.com/bootstrap-templates/jekyll-theme-memoirs/">Get Memoirs</a></li>      
-        <li><a href="{{ site.baseurl }}/contact">Contact</a></li>       
+        <li><a href="{{ site.baseurl }}/about">About Me</a></li>
+        <li><a href="{{ site.baseurl }}/">Blog</a></li>
+        <li><a target="_blank" href="{{ site.baseurl }}/projects">Projects</a></li>      
+        <li><a target="_blank" href="{{ site.baseurl }}/reading">Book Reviews</a></li>      
     </ul>   
 </nav>
 
@@ -85,7 +87,7 @@ ga('send', 'pageview');
 
     <!-- Content
     ================================================== -->
-    <div class="main-content">
+    <div class="main-">
         {{ content }}
     </div>
 
@@ -110,11 +112,8 @@ ga('send', 'pageview');
 <footer class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-sm-12 text-center text-lg-left">
-                Copyright © {{ site.time | date: "%Y" }} {{ site.name }} 
-            </div>
             <div class="col-md-6 col-sm-12 text-center text-lg-right">    
-                <a target="_blank" href="https://www.wowthemes.net/memoirs-free-jekyll-theme/">Memoirs Jekyll Theme</a> by WowThemes.net
+                Inspired by <a target="_blank" href="https://www.wowthemes.net/memoirs-free-jekyll-theme/">Memoirs</a>.
             </div>
         </div>
     </div>
