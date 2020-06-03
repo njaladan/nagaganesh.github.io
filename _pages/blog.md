@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Hi, I'm Ganesh. 
+title: Blog
 permalink: /blog
 comments: false
 ---
