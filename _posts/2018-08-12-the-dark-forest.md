@@ -2,7 +2,7 @@
 layout: post
 title:  "The Dark Forest"
 tags: [ Books ]
-link: false
+link: true
 ---
 
 I spent almost five hours reading this today. I literally couldn’t put it down. I love the way Liu wraps his own version of a future on Earth technologically with the political nature that would surround an alien strike from the future.

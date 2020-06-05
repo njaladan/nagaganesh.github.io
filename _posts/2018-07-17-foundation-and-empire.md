@@ -2,7 +2,7 @@
 layout: post
 title:  "Foundation and Empire"
 tags: [ Books ]
-link: false
+link: true
 ---
 
 Book two, finished! I was ready to see the Empire fall and the Second Empire rising, but it didn’t happen in this book. The first story is about an attempt by the Empire to take over the Foundation, but which is ultimately self-crippling. It feels kind of weird following the protagonists in Part 1 through the entire story, only to realize that at the end that the ending was “inevitable” due to psychohistory. It feels too normal, almost like real life. Regardless, I kinda liked the logic that Asimov uses to iron out the crisis. It makes sense from a certain standpoint, and it’s definitely believable that an ineffective Empire would destroy itself.

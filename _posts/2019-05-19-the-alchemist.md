@@ -2,7 +2,7 @@
 layout: post
 title:  "The Alchemist"
 tags: [ Books ]
-link: false
+link: true
 ---
 
 I know this is a wildly popular book - several people have recommended it to me - but I don't think it hit me the way it probably hit others. It seems like the type of book 40-year-old wine moms would feel mildly inspired to change their life by. There's a boy that undertakes a quest that seems as it if was directly taking from the "Hero's Journey" paradigm identified by Edward Tylor. There's a lot of feel-good spiritual things that are nice to believe (really, they are) but don't quite seem to hold up under literary scrutiny.
