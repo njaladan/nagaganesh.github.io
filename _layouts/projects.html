@@ -21,7 +21,7 @@ layout: default
 <div class="blog-grid-item">
     <div class="card h-100">
         <div class="maxthumb">
-            <a>
+            <a href="{{ post.link }}">
                 {% if post.image %}
 
                     {% if site.lazyimages == "enabled" %}
@@ -35,7 +35,7 @@ layout: default
         </div>
         <div class="card-body">
             <h2 class="card-title">
-                <a class="text-dark">{{ post.title }}</a>
+                <a class="text-dark" href="{{ post.link }}">{{ post.title }}</a>
                 {% if post.rating %}
                 <div class="mb-2 mt-2 font-weight-normal">
                 {% include star_rating_postbox.html %}
