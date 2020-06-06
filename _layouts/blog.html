@@ -8,6 +8,7 @@ title: Blog
 <!-- <div class="blog-grid-container"> -->
     {% for post in site.posts %}
     {% unless post.tags contains 'Books'%}
+    {% unless post.tags contains 'Projects'%}
     {% assign currentdate = post.date | date: "%Y" %}
     {% if currentdate != date %}
         <a class="card-title text-dark" id="y{{currentdate}}">{{ currentdate }}</a>
@@ -19,6 +20,7 @@ title: Blog
                     <span class="post-date">{{ post.date | date_to_string }}</span>
                 </div>
             </div>
+    {% endunless %}
     {% endunless %}
     {% endfor %}
 <!-- </div> -->
