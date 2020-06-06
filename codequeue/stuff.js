@@ -11,15 +11,19 @@ console.log(defaultApp.name);  // "[DEFAULT]"
 db = firebase.database();
 
 var queueRef = db.ref('/queue/');
+var breakRef = db.ref('/broken/')
 var app = new Vue({
   el: '#app',
   data: {
     queue: [],
+    broken: false,
     name: ""
   },
   mounted: function() {
-    console.log('mounted');
+    console.log("bro please don't break my app")
+    mixpanel.track("Loaded CodeQueue");
     queue = this.queue
+    instance = this
     queueRef.on('child_added', function(snapshot) {
         newElement = snapshot.val();
         this.queue.push([snapshot.key, newElement]);
@@ -34,26 +38,41 @@ var app = new Vue({
             }
         }
         this.queue.splice(indexToRemove, 1);
-        console.log(this.queue);
     });
+    breakRef.on('value', function(snapshot) {
+      instance.setBreak(snapshot.val());
+    })
   },
 
   methods: {
     addToQueue: function() {
-        if (!this.name) {
-          return;
-        }
-        newNameRef = queueRef.push()
-        newNameRef.set(this.name)
-        this.name = ""
+      if (this.broken) {
+        return;
+      }
+      if (!this.name) {
+        return;
+      }
+      newNameRef = queueRef.push()
+      newNameRef.set(this.name)
+      this.name = ""
+      mixpanel.track("Added to Queue");
+    },
+    toggleBreak: function() {
+      this.broken = !this.broken;
+      breakRef.set(this.broken)
+      mixpanel.track("Toggle Break");
+    },
+    setBreak: function(val) {
+      this.broken = val
+      mixpanel.track("Set Breakpoint");
     },
     removeElement: function(item) {
-      queueRef.child(item[0]).remove()
+      db.ref(`queue/${item[0]}`).remove()
+      mixpanel.track("Removed from Queue");
     }
   }
   }
 );
-
 
 
 function runBubbles() {
