@@ -5,7 +5,7 @@ tags: [ Books ]
 link: true
 ---
 
-Monetizing Innovation is an *incredible* book that lays out a data-driven framework for product development and pricing that goes against the traditional methods of "trusting the gut". Traditional product development usually follow the following path: heavy investment in R&D to figure out an innovation, fleshing out a product design, and handing over the completed product to sales to understand pricing before manufacturing. This method is fundamentally flawed, as it leads to companies developing products that are are unnecessary, aren't priced correctly, or have unclear value propositions. 
+Monetizing Innovation lays out a data-driven framework for product development and pricing that goes against the traditional methods of just "trusting your gut". Traditional product development usually follow the following path: heavy investment in R&D to figure out an innovation, fleshing out a product design, and handing over the completed product to sales to understand pricing before manufacturing. This method is fundamentally flawed, as it leads to companies developing products that are are unnecessary, aren't priced correctly, or have unclear value propositions. 
 
 The book has an incredible amount of information, and I'd recommend everyone working at a company to read it. Here are some of my takeaways:
 
