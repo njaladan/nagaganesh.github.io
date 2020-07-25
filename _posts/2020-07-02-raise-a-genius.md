@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Raise a Genius"
+title:  "Raise a Genius!"
 tags: [ Books ]
 link: false
 ---
