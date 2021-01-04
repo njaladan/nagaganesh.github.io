@@ -5,7 +5,7 @@ tags: [ Books ]
 link: true
 ---
 
-Here are some interesting things from A Promised Land:
+Here are some interesting things from A Promised Land, President Obama's biography:
 
 - It was fairly interesting to see how a decent number of leaders that Obama mentions (including himself) got their start in things like working on campaigns or volunteering for causes and candidates they believed in. This might partially be Obama's bias since he grew up in that environment, but it's a change from other careers (like law, tech, medicine) where you major in something and know you'll go into a particular job field after.
 - Obama rise to stardom was fairly lucky, though he seems to not touch too much on that in the book. He ran essentially unopposed for senator of Illinois in 2004 (in the state election, not the primary). His only political experience in the primary for that election was working on the state congress of Illinois. Him giving the speech at the 2004 DNC that was positively received could also somewhat be a stroke of luck. I bring this up because sometimes it does seem like there's a right time and place for a candidate, and Obama running in the 2008 presidential election certainly seems so. This is especially crazy because his campaign starting in 2007 meant that he had only 3 years total of being a US senator until his belt.
