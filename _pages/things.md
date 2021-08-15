@@ -5,14 +5,3 @@ permalink: /things
 comments: false
 ---
 
-Here's a list of interesting things that I've either stumbled upon or read that I'd like to keep around:
-
-## Things to try
-
-- Polyphasic sleep schedules are when people sleep at multiple points in a day and somehow end up feeling more energized than a regular sleep schedule.
-    - There's an interesting [wiki](https://polysleep.org/wiki/Main_Page) that has quite a bit of information, as well as a [VICE article](https://www.vice.com/en/article/vv7e8m/the-uberwomen-who-beat-sleep) giving a deep dive into the individual that started it. 
-    - A number of people on [HN](https://news.ycombinator.com/item?id=3807572) and [Reddit](https://www.reddit.com/r/slatestarcodex/comments/cp4jrn/polyphasic_sleep/) seem to have had fairly negative experiences trying this out.
-    - This seems pretty fun to try. I think I'd like to do the [E1](https://polysleep.org/wiki/E1) if I end up doing this, but I also wonder what I'd do with all my free time.
-- [Pavlok](https://pavlok.com/) is a device you wear on your wrist that lets you send little electrical shocks to yourself. The idea is that this would provide a negative feedback loop to cut down on bad habits subconsciously.
-    - This is something I've wanted to play around with for 5+ years, but the high cost is definitely a bit off-putting. A good case-study in value-based pricing. It likely costs very little manufacture, but the value for the end user is fairly high.
-    - I've heard a rubber band is a low-cost alternative to this - but hey, shocking yourself definitely does have a morbid appeal.
