@@ -16,6 +16,7 @@ title: Blog
     {% for post in site.posts %}
     {% unless post.tags contains 'Books'%}
     {% unless post.tags contains 'Projects'%}
+    {% if post.link %}
     {% assign currentdate = post.date | date: "%Y" %}
     {% if currentdate != date %}
         <a class="card-title text-dark" id="y{{currentdate}}">{{ currentdate }}</a>
@@ -27,6 +28,7 @@ title: Blog
                     <span class="post-date">{{ post.date | date_to_string }}</span>
                 </div>
             </div>
+    {% endif %}
     {% endunless %}
     {% endunless %}
     {% endfor %}
