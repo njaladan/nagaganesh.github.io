@@ -12,7 +12,7 @@ layout: default
 {% for tag in site.tags %}
 {% if tag[0] == "Books" %}
 {% assign pages_list = tag[1] %}
-{% for post in pages_list %}
+{% for post in pages_list reversed %}
 {% if post.title != null %}
 {% if group == null or group == post.group %}
 {% assign currentdate = post.date | date: "%Y" %}
